@@ -1,0 +1,330 @@
+/* Kleuren definieeren */
+:root {
+    --black: #000000;
+    --b1-black: #070101f5;
+    --gray: #b8b6b6a1;
+    --g1-gray: #eae8e8;
+    --white: #ffffff;
+}
+
+/*  Styling van a links */
+.none {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.none:hover {
+    color: var(--gray);
+}
+
+/*  Styling van button */
+#btn {
+    width: 150px !important;
+}
+
+
+/* Space tussen zaken */
+.space {
+    height: 50px;
+}
+
+/* Logo van EHB op navbar */
+.ehb_logo {
+    margin-left: 50px;
+    margin-right: 50px;
+
+    width: 100px !important;
+}
+
+.v_line {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    border-left: 1px solid var(--b1-black);
+}
+
+/* Hero Home */
+.hero {
+    background-color: var(--gray);
+}
+
+/* Sign-up page */
+/* Button van de Sign-up */
+.btn {
+    margin-right: 50px;
+    margin-left: 10px;
+
+    border-radius: 0 !important;
+    font-size: 15px !important;
+
+    width: 115px;
+    height: 50px;
+
+    text-align: center;
+}
+
+#sign_up {
+    color: var(--white);
+}
+
+#space {
+    margin-top: 50px;
+
+    color: var(--white);
+}
+
+.form-group {
+    margin-top: 25px;
+}
+
+#left_signup {
+    float: left;
+    width: 50%;
+}
+
+#right_signup {
+    width: 50%;
+    height: 100vh;
+}
+
+#right_login {
+    float: right;
+    width: 50%;
+}
+
+#left_login {
+    height: 100vh;
+
+    float: left;
+}
+
+#login_warning {
+    display: flex;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+#links {
+    font-size: 15px;
+    color: var(--black);
+
+    margin-left: 5px;
+}
+
+
+/* NO STYLING TO BUTTONS */
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.button_none {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+/* CARTPAGE */
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.bg-grey {
+    background-color: var(--g1-gray);
+}
+
+@media (min-width: 992px) {
+    .card-registration-2 .bg-grey {
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-registration-2 .bg-grey {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+}
+
+/* SETTINGS PAGE */
+
+.avatar-xl img {
+    width: 110px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.text-muted {
+    color: #aeb0b4 !important;
+}
+
+.text-muted {
+    font-weight: 300;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d5154;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #eef0f3;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Checkout page */
+.cards {
+    z-index: 0;
+    background-color: #ECEFF1;
+    padding-bottom: 20px;
+    margin-bottom: 90px;
+    border-radius: 20px;
+}
+
+.top {
+    padding-top: 40px;
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 50%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: #C5CAE9;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: #C5CAE9;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after,
+#progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: var(--b1-black);
+}
+
+#progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.icon-content {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .icon-content {
+        width: 50%;
+    }
+}

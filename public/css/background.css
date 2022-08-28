@@ -1,0 +1,12 @@
+/*  BODY BACKGROUND FOR DASHBOARD */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('../images/Backgroundv4.png');
+}
+
+#bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('../images/Backgroundv4.png');
+}
